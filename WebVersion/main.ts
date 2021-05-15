@@ -106,9 +106,9 @@ function patch(view: DataView, fileNumber: number): PatchErrorCode {
 
     // Set the current follower ID.
     if (version === GameVersion.JP) {
-        patchFilesU32(0x11EC, 0x4F04);
+        patchFilesU32(0x11E8, 0x4F04);
     } else {
-        patchFilesU32(0x11EC, 0x4F7F);
+        patchFilesU32(0x11E8, 0x4F7F);
     }
 
     // Write the init ASM function.

@@ -139,9 +139,9 @@ if GameId == ID_JP:
 else:
 	CurrentFollowerValue = 0x4F7F
 
-f.seek(OffsetFirstFile + 0x11EC, 0)
+f.seek(OffsetFirstFile + 0x11E8, 0)
 f.write(CurrentFollowerValue.to_bytes(4, byteorder="big", signed=False))
-f.seek(OffsetSecondFile + 0x11EC, 0)
+f.seek(OffsetSecondFile + 0x11E8, 0)
 f.write(CurrentFollowerValue.to_bytes(4, byteorder="big", signed=False))
 
 # Write the init asm function
